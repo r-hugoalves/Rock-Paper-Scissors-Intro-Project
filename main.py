@@ -2,7 +2,7 @@
 # FreeCodeCamp
 # Hugo R. Alves https://github.com/r-hugoalves/Rock-Paper-Scissors-Intro-Project
 
-            # Funções e Variáveis / Variables and Functions #
+# Defining the choices of the game #
 
 import random
 
@@ -17,6 +17,8 @@ def get_choices():
     return choices
 
 # print(get_choices())
+
+# Defining the possibilities of the game #
 
 def check_win(player, computer):
     print('You chose: ' + player)
@@ -61,7 +63,7 @@ def check_win(player, computer):
 #           else:
 #               print('Computer wins!')
 
-
+# Playing the game #
 choices = get_choices()
     # here we define the options of the dictionarie, so we can use the values outside of the function
 result = check_win(choices['player'], choices['computer'])
