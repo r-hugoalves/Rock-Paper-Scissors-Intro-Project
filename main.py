@@ -39,7 +39,7 @@ def check_win(player, computer):
     elif player == 'scissors' and computer == 'rock':
         print('Computer wins!')
     
-# We can also do with a if whithin the elif statement. Example: 
+# We can also do with a 'if' whithin the 'elif' statement. Example: 
 
 #   if player == computer:
 #        print('It is a tie!')
@@ -61,4 +61,9 @@ def check_win(player, computer):
 #           else:
 #               print('Computer wins!')
 
-    
+
+choices = get_choices()
+    # here we define the options of the dictionarie, so we can use the values outside of the function
+result = check_win(choices['player'], choices['computer'])
+    # here we call the keys of the dictionarie, it means that, we can access the values, wich are now define above
+print(result)
