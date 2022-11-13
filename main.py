@@ -12,8 +12,18 @@ def get_choices():
     computer_choice = random.choice(options)
 
     choices = {'player': player_choice, 'computer': computer_choice}
-        # 'choice' é um dicionário / dict = {'key': value, 'key': value}
+        # 'choice' is a dictionarie / dict = {'key': value, 'key': value}
 
     return choices
 
 # print(get_choices())
+
+def check_win(player, computer):
+    print('You chose: ' + player)
+    print(f'Computer chose: {computer}')
+
+    if player == computer:
+        print('It is a tie!')
+      
+check_win('rock', 'rock')
+    
