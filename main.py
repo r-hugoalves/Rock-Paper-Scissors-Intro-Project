@@ -24,6 +24,41 @@ def check_win(player, computer):
 
     if player == computer:
         print('It is a tie!')
-      
-check_win('rock', 'rock')
+    elif player == 'rock' and computer == 'paper':
+        print('Computer wins!')
+    elif player == 'rock' and computer == 'scissors':
+        print('Player wins!')
+
+    elif player == 'paper' and computer == 'rock':
+        print('Player wins!')
+    elif player == 'paper' and computer == 'scissors':
+        print('Computer wins!')
+
+    elif player == 'scissors' and computer == 'paper':
+        print('Player wins!')
+    elif player == 'scissors' and computer == 'rock':
+        print('Computer wins!')
+    
+# We can also do with a if whithin the elif statement. Example: 
+
+#   if player == computer:
+#        print('It is a tie!')
+#       elif player == 'rock':
+#            if computer == 'paper':
+#               print('Computer wins!')
+#           else:
+#                print('Player wins!')
+#
+#       elif player == 'paper':
+#           if computer == 'rock':
+#               print('Player wins!')
+#           else: 
+#               print('Computer wins!')
+#
+#       elif player == 'scissors':
+#           if computer == 'paper':
+#               print('Player wins!')
+#           else:
+#               print('Computer wins!')
+
     
