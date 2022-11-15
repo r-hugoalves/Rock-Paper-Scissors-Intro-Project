@@ -7,7 +7,7 @@
 import random
 
 def get_choices():
-    player_choice = input('Enter a choice (rock, papel, scissors): ')
+    player_choice = input('Enter a choice (rock, paper, scissors): ')
     options = ['paper', 'rock', 'scissors']
     computer_choice = random.choice(options)
 
